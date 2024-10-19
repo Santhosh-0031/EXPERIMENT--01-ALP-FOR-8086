@@ -1,5 +1,7 @@
 # Name : Santhosh Kumar R
 # Roll no : 212223100051
+# Date of experiment : 13.08.24
+
 
 
 
@@ -75,118 +77,94 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 ## Addition  of 8 bit ALP 
 ```
-org 100h
-
-MOV AX,06H;
-MOV BX,03H;
-ADD AX,BX;
-MOV [500H],AX;
-ret
+ORG 100h
+MOV ax,11h;
+MOV bx,20h;
+ADD ax,bx;
+HLT
 ```
-
 ## Output  
-![image](https://github.com/user-attachments/assets/6d354885-5a7d-485f-bf99-000d95d23780)
-
-
+ ![image](https://github.com/user-attachments/assets/1f8716da-ed9f-4ccf-b657-f08bbe0b4bad)
 ## Subtraction   of 8 bit numbers  ALP 
  ```
-org 100h
-
-MOV AX,06H;
-MOV BX,03H;
-ADD AX,BX;
-MOV [600H],AX;
-ret
-```
-## Output  
-![image](https://github.com/user-attachments/assets/1b208f5c-d42f-4cac-a2de-100bbf47dc0b)
-
-
-
+ ORG 100h
+MOV ax,31h;
+MOV bx,20h;
+SUB ax,bx;
+HLT
+ ```
+## Output 
+ ![image](https://github.com/user-attachments/assets/1901a10a-b120-4287-a28e-13a0027414bd)
 ## Multiplication alp 
 ```
-org 100h
-
-MOV AX,06H;
-MOV BX,01H;
-ADD AX,BX;
-MOV [800H],AX;
-ret
+ORG 100h
+MOV ax,31h;
+MOV bx,20h;
+MUL bx;
+HLT
 ```
  ## Output  
-![Screenshot (38)(1)(1)](https://github.com/user-attachments/assets/a5e19c8c-2fd0-41e8-9ba3-ddb68b3ba0fe)
-
-
+![image](https://github.com/user-attachments/assets/9c8ad22d-7a5a-4883-8ff3-8cdce0c0077f)
 ## Division alp 
 ```
-org 100h
-
-MOV AX,04H;
-MOV BX,02H;
-ADD AX,BX;
-MOV [700H],AX;
-ret
+ORG 100h
+MOV ax,10h;
+MOV bx,05h;
+DIV bx;
+HLT
 ```
 ## Output  
-![image](https://github.com/user-attachments/assets/37d55003-83ed-438b-9321-3271b080a718)
+![image](https://github.com/user-attachments/assets/292f3adf-bb87-41a9-999b-c458bdeca778)
 
-## Program for Logical Operations
-## AND
+## Programs for logical operations
+## Logical AND
 ```
-org 100h
-
-MOV BX,04H; 
-MOV AX,08H;
-OR BX,AX;
-MOV [200H],AX;
-
-ret
+MOV AL,53H
+MOV BL,24H
+AND AL,BL
+HLT
 ```
-## OUTPUT
-<img width="882" alt="image" src="https://github.com/user-attachments/assets/694a09cb-2351-41f7-a68e-53e19b78e332">
+## Output
+![image](https://github.com/user-attachments/assets/7cbc943a-39d9-4bfd-99a1-951ae25ceac8)
 
-## OR
+## Logical OR
 ```
-org 100h
-
-MOV BX,04H; 
-MOV AX,08H;
-OR AX,BX;
-MOV [700H],AX;
-
-ret
+MOV AL,53H
+MOV BL,24H
+OR AL,BL
+HLT
 ```
-## OUTPUT
-<img width="880" alt="image" src="https://github.com/user-attachments/assets/9cc817c3-1eff-4b0d-ad34-06fca6cc3f54">
+## Output
+![image](https://github.com/user-attachments/assets/a4112932-17c2-4bfd-9103-bb17d77b6df5)
 
-## XOR
+## Logical NOT 
 ```
-org 100h
-
-MOV BX,014H; 
-MOV AX,08H;
-XOR AX,BX;
-MOV [700H],AX;
-
-ret
+MOV AL,53H
+NOT AL
+HLT
 ```
-## OUTPUT
-<img width="884" alt="image" src="https://github.com/user-attachments/assets/01884920-6fec-404b-b06d-76fc280f5384">
+## Output
+![image](https://github.com/user-attachments/assets/5ce9b2aa-9cc3-4641-a3d0-a02636aefca0)
 
-## NOT
+## Logical XOR
 ```
-org 100h
-
-MOV AX,04H;
-NOT AX;
-MOV [400],AX;
-
-ret
-
+MOV AL,53H
+MOV BL,24H
+XOR AL,BL
+HLT
 ```
-## OUTPUT
-<img width="797" alt="image" src="https://github.com/user-attachments/assets/0a324688-2d83-4588-a484-a80e919f1002">
+## Output
+![image](https://github.com/user-attachments/assets/25806f01-f75b-4faf-8cc9-0680ec6a8e13)
 
-## RESULT
+## Result :
+ Thus, To write and execute ALP on fundamental arithmetic operations is successful.
 
-Thus, ALP for fundamental arithmetic and logical operations are executed successfully.
+
+
+
+
+
+
+
+
+
